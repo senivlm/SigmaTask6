@@ -15,11 +15,12 @@ namespace SigmaTest
 
 
         //конструктор без параметрів-----
+        хард код
         public Polynomial()
             : this(new double[] { 1, 2 }) { }
         //з параметром koefs - масив коефіціентів------ 
         public Polynomial(double[] koefs)
-        {
+        {А де виділення пам'яті
             try
             {
                 PolinomKoefs = koefs;
@@ -99,7 +100,7 @@ namespace SigmaTest
         }
         //Отримати поліном з стрічки------------------
         public void Parse(string polynom)
-        {
+        {Чому перехоплення тут
             try
             {
                 string[] polSplit = polynom.Split();
@@ -270,6 +271,7 @@ namespace SigmaTest
             for (int i = 1; i < polynKoefs.Length; i++)
             {
                 //не виводити нульові коефіціенти полінома
+                ще б краще їх не тримати в пам'яті
                 if (polynKoefs[i] == 0)
                     continue;
                 if (polynKoefs[i] >= 0)
