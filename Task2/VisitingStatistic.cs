@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace SigmaTest
 {
     class VisitingStatistic
-    {
+    {2 треба було шукати моду. Можна було спробувати написати параметризований метод 
         List<IpInfo> arrIp;
 
         public IpInfo this[int index]
@@ -20,7 +20,7 @@ namespace SigmaTest
                 return arrIp[index];
             }
         }
-
+Для чого?
         public VisitingStatistic()
         : this("N/A") { }
         public VisitingStatistic(string path)
